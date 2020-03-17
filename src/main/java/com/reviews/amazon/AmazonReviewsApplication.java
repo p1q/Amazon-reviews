@@ -19,6 +19,8 @@ public class AmazonReviewsApplication {
         Optional<List> fileLines = csvReader.openFile();
         if (fileLines.isPresent()) {
             csvReader.getMostActiveUsers(fileLines.get());
+            csvReader.getMostCommentedFoodItems(fileLines.get());
+            csvReader.getMostUsedWordsInReviews(fileLines.get());
         } else {
             LOGGER.error("File open error!");
             throw new IOException("File open error!");
