@@ -19,3 +19,4 @@ target/
 *.iml
 *.ipr
 /src/main/resources/reviews.csv
+/src/main/resources/reviews.csv2
